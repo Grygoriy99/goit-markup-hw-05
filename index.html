@@ -413,9 +413,69 @@
                 </form>
             </div>
         </div>
-
     </footer>
-</body>
 
+    <!-- Modal window -->
+    <!-- aria-label - атрибут доступності, описуємо що це за елемент для сео машини -->
+    <div class="backdrop is-open">
+        <div class="modal">
+            <button class="modal-btn" type="button" aria-label="Modal close button">
+                <svg class="modal-btn-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <p class="modal-caption">
+                Leave your contacts and we will call you back
+            </p>
+            <!-- method="post" для безпечної відправки даних -->
+            <form class="modal-form" name="order-service">
+                <div class="field">
+                    <label class="text-label" for="user-name">Name</label>
+                    <div class="icon-input">
+                        <input class="form-input" id="user-name" name="user-name" type="text" required />
+                        <svg class="form-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="text-label" for="phone">Phone</label>
+                    <div class="icon-input">
+                        <input class="form-input" id="phone" name="phone" type="tel" required />
+                        <svg class="form-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="text-label" for="email">Email</label>
+                    <div class="icon-input">
+                        <input class="form-input" id="email" name="email" type="email" required />
+                        <svg class="form-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="field field-textarea">
+                    <label class="text-label" for="user-comment">Comment</label>
+                    <textarea class="text-textarea" id="user-comment" name="user-comment" cols="30" rows="10"
+                        placeholder="Text input"></textarea>
+                </div>
+                <div class="field_">
+                    <input class="visually-hidden" name="user-privacy" type="checkbox" id="user-privacy" value="true"
+                        required />
+                    <label class="field_checkbox" for="user-privacy"><span class="privacy-policy">
+                            <svg class="svg-checkbox" width="10" height="8">
+                                <use href="./images/icons.svg#icon-checkbox"></use>
+                            </svg>
+                        </span>I accept the terms and conditions of the
+                        <a class="link-privacy-policy" href="">Privacy Policy</a>
+                    </label>
+                </div>
+                <button class="modal-button" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
 
 </html>
