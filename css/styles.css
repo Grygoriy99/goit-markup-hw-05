@@ -663,8 +663,6 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #e7e9fc;
-  stroke-width: 1px;
-  stroke: rgba(0, 0, 0, 0.1);
 }
 .modal-btn:hover {
   background-color: #404bbf;
@@ -706,7 +704,6 @@ button {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: transparent;
-  stroke: #2e2f42;
   fill: #2e2f42;
 }
 .form-input {
@@ -725,7 +722,6 @@ button {
 }
 .form-input:focus + .form-icon {
   fill: #4d5ae5;
-  stroke: #4d5ae5;
 }
 .text-label,
 .text-textarea {
@@ -832,4 +828,7 @@ button {
 }
 .link-privacy-policy {
   color: #4d5ae5;
+}
+.icon-style {
+  text-dacoration: underline;
 }
