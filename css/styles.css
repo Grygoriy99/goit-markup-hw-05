@@ -790,7 +790,7 @@ button {
 .field-textarea {
   margin-bottom: 16px;
 }
-.field {
+.fieldterm {
   display: flex;
   margin-bottom: 24px;
   align-items: flex-start;
@@ -820,12 +820,12 @@ button {
 .modal-button:focus {
   background-color: #404bbf;
 }
-.visually-hidden:checked + .field_checkbox > .privacy-policy {
+.visually-hidden:checked + .field-checkbox > .privacy-policy {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
-.field_checkbox {
+.field-checkbox {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
