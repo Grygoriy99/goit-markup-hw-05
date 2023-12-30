@@ -790,7 +790,7 @@ button {
 .field-textarea {
   margin-bottom: 16px;
 }
-.field_ {
+.field {
   display: flex;
   margin-bottom: 24px;
   align-items: flex-start;
