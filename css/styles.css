@@ -664,23 +664,29 @@ button {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #e7e9fc;
 }
+
 .modal-btn:hover {
-  background-color: #404bbf;
+  background-color: #0000001a;
   border: none;
 }
 .modal-btn:focus {
-  background-color: #404bbf;
+  background-color: #0000001a;
   border: none;
 }
-.modal-btn:hover .modal-btn-icon {
-  fill: #ffffff;
+
+.modal-btn-icon:hover {
+  /*background-color: #818181;*/
+  fill: #4d5ae5;
 }
-.modal-btn:focus .modal-btn-icon {
-  fill: #ffffff;
+.modal-btn-icon:focus {
+  /*background-color: #818181;*/
+  fill: #4d5ae5;
 }
+
 .modal-btn-icon {
   background-color: #e7e9fc;
   fill: #2e2f42;
+  cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-caption {
@@ -723,6 +729,7 @@ button {
 .form-input:focus + .form-icon {
   fill: #4d5ae5;
 }
+
 .text-label,
 .text-textarea {
   color: #8e8f99;
